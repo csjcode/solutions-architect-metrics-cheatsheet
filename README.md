@@ -1,13 +1,14 @@
 
-# 150+ Solutions Architect metrics/calculations cheatsheet
+#  ⚡️ 150+ Solutions Architect metrics/calculations cheatsheet
 
 150+ Solutions Architect metrics and calculations for systems design, technology comparisons, planning and projects. btw, If there is interest, I'll make this into tables, I made a few but haven't had time to do it all yet.
 
-Categories: User, Network, Reliability, Compute, Storage, Database, Security.
+Categories: User, Network, Reliability, Compute, Storage, Database, Queues/Events, Security, Cost.
 
 Thanks for checking it out... if you have ideas for improvements, feel free to comment or make a PR on my github repo: https://github.com/csjcode/solutions-architect-metrics-cheatsheet
 
-### User
+
+### ⭐️ User
 
 * **Daily Active Users (DAU)**
   * Unique active users / day 
@@ -39,7 +40,7 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 
 
 
-### Network 
+### ⭐️ Network 
 
 
 
@@ -87,7 +88,7 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 
 
 
-### Reliability
+### ⭐️ Reliability
 
 
 * **Recovery Time Objective (RTO)**
@@ -169,7 +170,7 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
   * Availability (% time), reliability (probability of working service), maintainability, and recoverability (MTTR)
 
 
-### Compute
+### ⭐️ Compute
 
 
 Many of the following metrics are available in analytics services of the cloud provider tools such as AWS Cloudwatch or service dashboards. Metrics are included here for awareness and a reminder when evaluating Compute resources.
@@ -207,7 +208,7 @@ Many of the following metrics are available in analytics services of the cloud p
 * **Function response time**
   * Execution time. Evaluate speed. Gauge execution time.
 
-### Load Balancing
+### ⭐️ Load Balancing
 * **Load Balancing Algorithm**
   * Algorithm used by the load balancer to distribute traffic
   * Round Robin, Least Connections, Weighted Round Robin, Weighted Least Connections, Dynamic Least Connections, Source IP Hash, Least Time,  Least Packets, Agent-Based Load Balancing, URL Hash, Server Affinity (Sticky Sessions)
@@ -228,7 +229,7 @@ Many of the following metrics are available in analytics services of the cloud p
 * **Connection Rebalancing Time**
   * Time taken to rebalance connections across servers
 
-### Autoscaling
+### ⭐️ Autoscaling
 
 * **Scaling metric**
   * A metric that determines when autoscaling should occur, such as CPU utilization or request count
@@ -255,7 +256,7 @@ Many of the following metrics are available in analytics services of the cloud p
 * **Cool-down period**
   * The period of time after scaling has occurred during which autoscaling is suspended to prevent rapid scaling up and down
 
-### Elasticity
+### ⭐️ Elasticity
 * **Resource utilization**
   * The percentage of available resources (such as CPU or memory) that are currently in use
 * **Capacity planning**
@@ -265,7 +266,7 @@ Many of the following metrics are available in analytics services of the cloud p
 * **Cost Optimization**
   * The process of minimizing costs while maintaining the necessary level of elasticity and performance.
 
-### Database
+### ⭐️ Database
 
 * **Throughput**
   * The amount of data transferred per unit of time
@@ -324,7 +325,8 @@ Many of the following metrics are available in analytics services of the cloud p
   * Soft state (may be inconsistent for brief periods) 
   * Eventually consistent
 
-### Storage
+
+### ⭐️ Storage
 
 
 #### General Storage metrics
@@ -349,9 +351,7 @@ Applies to most storage mediums, including block, file, and object storage.
   * Amount of data transferred per unit of time
   * Total data transferred / time interval
 
-
 #### Object storage
-
 
 * **Object Storage Utilization**
   * Amount of object storage used versus total available object storage
@@ -426,11 +426,11 @@ Applies to most storage mediums, including block, file, and object storage.
   * Time taken for a block storage device to process a read/write request
   * Total time for read/write requests / Number of requests
 
-
 * Types of RAIDS
-  
+
+
 RAID Level | Description
------------|----------------
+-----------|------------
 RAID 0 | Data is striped across multiple disks for increased performance, but offers no redundancy.
 RAID 1 | Data is mirrored across two disks for fault tolerance, but offers no performance improvement.
 RAID 5 | Data is striped across multiple disks with parity information stored on each disk for fault tolerance.
@@ -439,7 +439,42 @@ RAID 10 | A combination of RAID 1 and RAID 0, where data is mirrored and striped
 RAID 50 | A combination of RAID 5 and RAID 0, where data is striped across multiple RAID 5 arrays for increased performance and fault tolerance.
 RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multiple RAID 6 arrays for even greater performance and fault tolerance.
 
-### Security
+
+### ⭐️ Queues/Events Services
+
+* **Queue Depth**
+  * Number of events in a queue waiting to be processed.
+  * Total events - Processed events
+* **Queue Wait Time**
+  * Amount of time an event spends waiting in a queue before being processed.
+  * Total time events spend in queue / Number of events in queue
+* **Event Arrival Rate**
+  * Rate at which events are arriving at a queue.
+  * Number of events arriving / Time interval
+* **Event Processing Time**
+  * Amount of time it takes to process an event.
+  * Total time spent processing events / Number of events processed
+* **Event Processing Rate**
+  * Rate at which events are being processed.
+  * Number of events processed / Time interval
+* **Queue Processing Rate**
+  * Rate at which events are being processed from a queue.
+  * Number of events processed from queue / Time interval
+* **Queue Time**
+  * Total time that events spend in a queue, including both wait time and processing time.
+  * Queue Wait Time + Event Processing Time
+* **Queue Throughput**
+  * The rate at which events are moving through a queue, including both incoming and outgoing events.
+  * Incoming Event Rate + Outgoing Event Rate
+* **Event Drop Rate**
+  * the rate at which events are being dropped or lost, typically due to queue overflow.
+  * Number of dropped events / Total number of events
+* **Queue Latency**
+  * the time it takes for an event to travel through a queue, including both wait time and pr**ocessing time.
+  * Queue Time / Number of events
+
+
+### ⭐️ Security
 * Network Security Score: a metric that measures the security posture of a network, including factors such as the number of vulnerabilities, exposure to threats, and compliance with security standards.
 
 * **Incident Response Time**
@@ -515,7 +550,7 @@ RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multi
    * The practice of transforming sensitive data into an unreadable format 
    * Data encryption = implementation of encryption algorithms + encryption of data 
 
-### Cost  
+### ⭐️ Cost  
 
 I am only going to give some brief metrics on Cost, because almost everything above can affect cost and it will vary a lot between providers. 
 
