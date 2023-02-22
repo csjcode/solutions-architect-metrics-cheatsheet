@@ -567,4 +567,25 @@ Just that cost should be considered on ALL the metrics above.
 * **Cost of Poor Quality (CoPQ)** = (internal failure costs + external failure costs + cost of appraisal + cost of prevention) / total number of units produced
 * **Cost of Delay (CoD)** = (value of time saved by earlier release - cost of delay) / time saved
 
+There are a ton of cloud cost tools but these are some of the popular ones on the biggest platforms (there are many more if you search on their sites):
+
+* **AWS**
+  * AWS Cost Explorer
+  * AWS Budgets
+  * AWS Trusted Advisor
+* **Azure**
+  * Azure Cost Management + Billing
+  * Azure Advisor
+  * Azure Service Health
+* **GCP**
+  * GCP Billing
+  * GCP Pricing Calculator
+  * GCP Cost Management
+* **Third-party**
+* CloudCheckr
+* CloudHealth by VMware
+* Apptio Cloudability
+* CloudBolt
+* CloudZero
+
 Thanks for checking it out... if you have ideas for improvements, feel free to comment or make a PR on my github repo: https://github.com/csjcode/solutions-architect-metrics-cheatsheet
