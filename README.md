@@ -582,10 +582,10 @@ There are a ton of cloud cost tools but these are some of the popular ones on th
   * GCP Pricing Calculator
   * GCP Cost Management
 * **Third-party**
-* CloudCheckr
-* CloudHealth by VMware
-* Apptio Cloudability
-* CloudBolt
-* CloudZero
+  * CloudCheckr
+  * CloudHealth by VMware
+  * Apptio Cloudability
+  * CloudBolt
+  * CloudZero
 
 Thanks for checking it out... if you have ideas for improvements, feel free to comment or make a PR on my github repo: https://github.com/csjcode/solutions-architect-metrics-cheatsheet
