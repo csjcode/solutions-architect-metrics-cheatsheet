@@ -440,7 +440,7 @@ RAID 50 | A combination of RAID 5 and RAID 0, where data is striped across multi
 RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multiple RAID 6 arrays for even greater performance and fault tolerance.
 
 
-### ⭐️ Queues/Events Services
+### ⭐️ Queues/Events
 
 * **Queue Depth**
   * Number of events in a queue waiting to be processed.
