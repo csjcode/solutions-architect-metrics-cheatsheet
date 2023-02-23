@@ -598,5 +598,6 @@ There are a ton of cloud cost tools but these are some of the popular ones on th
 * [The Site Reliability Workbook](https://sre.google/books/)
 * [System Design Primer](https://github.com/donnemartin/system-design-primer)
 * [System Design Interview](https://github.com/checkcheckzz/system-design-interview)
-* 
+  
+  
 Thanks for checking it out... if you have ideas for improvements, feel free to comment or make a PR on my github repo: https://github.com/csjcode/solutions-architect-metrics-cheatsheet
