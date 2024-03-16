@@ -109,27 +109,35 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 
 * **Recovery Time Objective (RTO)**
   * Maximum time window delay within which a service must be restored after a disaster.
+  * For disaster recovery planning, ensuring that critical systems and data can be quickly restored to operational status following an outage. This helps in minimizing downtime and maintaining business continuity.
 * **Recovery Point Objective (RPO)**
-  * Maximum amount of time before unacceptable amounts of data have been lost due to a disaster, failure, or comparable event
+  * Maximum amount of time before unacceptable amounts of data have been lost due to a disaster, failure, or comparable event.
+  * Critical for data protection strategies, determining the maximum tolerable data loss in terms of time. This informs the frequency of backups and the design of data replication mechanisms to ensure data integrity and availability.
 * **Single Point of Failure (SPOF)**
   * Component that can cause system failure.
   * 1 - (redundant components/total components).
+  * For enhancing system resilience. It guides the design of redundancy and fault tolerance into the system architecture to prevent a single component failure from causing a total system outage.
 * **Cloud Services Quotas**
   * Limits on usage of cloud services.
   * Possible SPOF, if quota reached, service unavailable/degraded.
+  * To prevent service disruptions. It ensures that applications scale within the operational bounds of the cloud environment, avoiding unexpected outages or degraded performance due to quota limits.
 * **Availability (% of time)**
   * proportion of time a system is operational
   * uptime / (uptime + downtime)
+  * For quantifying the reliability of a system. It measures the total operational time as a percentage of overall time, offering a clear view of the system's stability and reliability over a defined period.
 * * **Availability (% of requests)**
   * proportion of time a system is operational
   * successful requests / (valid requests)
+  * Focused on the user perspective, this measures the effectiveness of a system in handling requests successfully. It provides insights into how often users can expect to complete their actions without encountering errors or outages, directly impacting user satisfaction and trust.
 * **Availability in 9s ("nines")**
   * Percentage of uptime in a year.
   * (total time - downtime) / total time
+  * Expressing availability in terms of "nines" allows for a precise and universally understood benchmark of system reliability. It sets clear expectations for operational performance, guiding infrastructure resilience and redundancy planning to meet these stringent standards.
 * **Maximum Availability with Dependencies**
   * Maximum Availability estimate for multiple services in a distributed system.
   * Availability of Service 1 * Availability of Service 2 * ... Availability of Service n
   * MTBF / MTBF + MTTR
+  * Underscores the compounded effect of dependencies on overall system availability. It aids in identifying the weakest links within a distributed system, focusing efforts on bolstering the resilience of those components to enhance the collective uptime.
 * **Maximum Availability with redundant components**
   * Maximum Availability estimate with duplicated components (higher reliability)
   * A = 1-F ≈ 1-f(1-a)<sup>s+1</sup>
