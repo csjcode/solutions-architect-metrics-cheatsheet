@@ -143,29 +143,38 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
   * A = 1-F ≈ 1-f(1-a)<sup>s+1</sup>
   * where s = spare components, F= failure modes, a= availability (in %)
   * ex: 99.5% availability, with two spares the workload’s availability is A ≈ 1 − (1)(1−.995)3 = 99.9999875% availability
+  * Illustrates the significant impact of redundancy on improving system availability. By integrating spare components, the system's resilience against failures is markedly enhanced, driving availability figures closer to the ideal 100%. It quantifies the benefit of redundancy in minimizing downtime, essential for critical systems where continuity is paramount.
 * **Mean Time to Failure (MTTF)**
   * Average time until a component fails.
   * total uptime / number of any failures.
+  * Assessing the reliability of non-repairable systems and components. It provides a measure of the expected lifetime of a system, guiding maintenance schedules and informing the design of robust systems that maximize operational lifespan, thereby reducing replacement costs and downtime.
 * **Mean Time Between Critical Failures (MTBCF)**
   * total uptime / number of critical failures.
+  * Helps in prioritizing improvements and redundancies for components that are most impactful on overall system stability and performance.
 * **Mean Time to Data Loss (MTTDL)**
   * Average time before data loss.
   * MTTDL = (1 - Annualized Rate of Data Loss) / Annualized Rate of Data Loss
   * Annualized Rate of Data Loss = (Total Data Stored) x (Data Loss Rate)
+  * Assesses the effectiveness of data protection strategies. It enables organizations to gauge the robustness of their data backup, replication, and recovery solutions, ensuring that data loss incidents are exceedingly rare and manageable within operational risk tolerances.
 * **Recovery Time (RT)**
   *  TTR + MTTD + MTTI + MTTRM, where TTR is Time to Respond.
+  * Quantifies the significant reliability boost provided by redundant components, illustrating how spare parts can drastically reduce the system's overall failure rate. For designing highly available systems where downtime is nearly unacceptable, guiding the strategic implementation of redundancy to meet stringent availability targets.
 * **Mean Recovery Time (MRT)**
   * Average time it takes to recover from a failure.
   * MRT = ∑RT / Number of incidents
+  * A holistic measure of the system's resilience, indicating the effectiveness of recovery strategies over time. It aids in benchmarking and improving recovery processes, aiming to minimize the impact of failures on operations.
 * **Mean Time to Detect (MTTD)**
   * Average time it takes to detect a failure.
   * MTTD = ∑time taken to detect incidents / Number of incidents.
+  * For improving monitoring and alerting systems, MTTD measures the responsiveness to initial failure signs. Lowering MTTD means faster recognition of issues, enabling quicker response to prevent escalation.
 * **Mean Time to Identify (MTTI)**
   * Average time it takes to identify a failure.
   * MTTI = ∑time taken to identify incidents / Number of incidents.
+  * Highlights the effectiveness of diagnostic processes and tools in pinpointing the causes of incidents. Reducing MTTI is key to accelerating recovery efforts by quickly understanding the nature of a failure.
 * **Mean Time to Remediate (MTTRM)**
   * Average time it takes to fix a failure.
   * ∑time taken to remediate incidents / Number of incidents.
+  * Focuses on the repair phase, assessing how swiftly a system can be returned to its fully operational state after a failure. It's critical for continuous improvement efforts aimed at reducing repair times and enhancing system reliability.
 * **Mean Time to Resolve (MTTR)**
   * Average time it takes to resolve a failure.
   * MTTR = ∑time taken to resolve incidents / Number of incidents.
