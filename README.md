@@ -11,41 +11,50 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 ### ⭐️ User
 
 * **Daily Active Users (DAU)**
-  * Unique active users / day 
+  * Unique active users / day
   * Performance and capacity needs, daily, projections.
+  * Gauge the day-to-day engagement and optimize infrastructure for daily load variations. This helps in scaling resources efficiently to manage daily user activity without over-provisioning.
 * **Monthly Active Users (MAU)**
   * Unique active users / month
   * Performance and capacity over longer time periods, projections.
-* **Concurrent Users, Avg/Max** 
+  * For understanding the broader trend in user engagement over a month. It assists in strategic planning for capacity, marketing efforts, and long-term scaling, ensuring that the system can handle monthly growth patterns without degradation in performance.
+* **Concurrent Users, Avg/Max**
   * Number of users at same time, average and peaks
   * Reliability, server capacity, quotas, service bottlenecks
+  * For designing systems that are resilient to spikes in user load, particularly during peak times. Architects rely on this data to ensure that the infrastructure can handle sudden increases in demand, maintaining uptime and performance by provisioning for peak loads.
 * **Actions Per User (APU): Average actions per user**
   * Actions performed by all unique users / by the number of unique users.
   * Performance, bandwidth, concurrency, cost optimization for high/low microservices.
+  * Understand user behavior in terms of interaction with the system. It informs decisions on optimizing specific paths or features users frequently interact with, allowing for more efficient resource allocation and improved user experience by focusing on high-usage areas.
 * **Actions Per User delta (APU Δ)**
   * Change in actions per user over a given time period
   * Speed of scalability, concurrency, performance.
+  * Utilize this metric to monitor the evolution of user engagement and interaction intensity. For adjusting the system to evolving user demands, ensuring that scalability and performance enhancements align with changes in user behavior.
 * **Daily User Actions (DUA)**
   * Total actions performed by all users in a day.
   * System load, performance, cost and capacity growth needs.
+  * Leverage DUA to comprehend the daily operational demands on the system. It's essential for predicting system load, informing capacity planning, and ensuring the infrastructure can accommodate daily activity without compromising performance.
 * **Requests Per Second (RPS)**
   * Service requests per second
   * Reliability in high traffic, quotas, performance.
+  * Deploy this metric to gauge the system's ability to handle real-time demand. For ensuring the infrastructure can sustain high traffic volumes, maintain reliability, and optimize performance under varying loads.
 * **User Delta**
   * Change in the number of users over a given time period
   * Speed of scalability, capacity planning, concurrency, performance, cost..
+  * Track growth trends and fluctuations in the user base. For proactive scalability, efficient capacity planning, and optimizing resource allocation to match the changing size and needs of the user population.
 * **Session length**
   * Average duration of user session
   * Server resources, cost, performance, concurrency planning.
+  * Apply this metric to understand user engagement depth and resource utilization patterns. For managing server resources, minimizing costs, and ensuring high performance and concurrency by tailoring the system to typical user session behaviors.
 
 
 
-### ⭐️ Network 
+### ⭐️ Network
 
 
 
 * **CIDR/Subnet Calculation**
-  * IP address and network mask calculation, 
+  * IP address and network mask calculation,
   * Number of IPs = 2<sup>32</sup>-2<sup>prefix</sup>
   * 10.0.0.0/24 = 2<sup>32</sup>-2<sup>24</sup> = 2<sup>8</sup> = 256
   * For network sizing and planning
@@ -76,7 +85,7 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 * **Packet Loss Rate**
   * Percentage of lost packets.
   * Identifies potential vulnerabilities or issues in the network or application.
-* **HTTP response codes** 
+* **HTTP response codes**
   * Partial list, see [full list](https://en.wikipedia.org//wiki/List_of_HTTP_status_codes)
   * **1xx info**, processing
   * **2xx successful**: 200 OK
@@ -113,7 +122,7 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 * **Maximum Availability with Dependencies**
   * Maximum Availability estimate for multiple services in a distributed system.
   * Availability of Service 1 * Availability of Service 2 * ... Availability of Service n
-  * MTBF / MTBF + MTTR  
+  * MTBF / MTBF + MTTR
 * **Maximum Availability with redundant components**
   * Maximum Availability estimate with duplicated components (higher reliability)
   * A = 1-F ≈ 1-f(1-a)<sup>s+1</sup>
@@ -177,30 +186,30 @@ Many of the following metrics are available in analytics services of the cloud p
 
 * **CPU utilization**
   * CPU usage rate. Monitor performance & efficiency. Optimize performance.
-  * Total CPU time / Elapsed time 
+  * Total CPU time / Elapsed time
 * **Disk I/O**
   * Disk input/output. Measure read/write speeds for the Compute device. Optimize throughput.
-  * Total bytes read/written / Elapsed time 
+  * Total bytes read/written / Elapsed time
 * **Network I/O**
-  * Network input/output. Measure bandwidth usage on the Compute device. Optimize connectivity. 
-  * Total bytes sent/received / Elapsed time 
+  * Network input/output. Measure bandwidth usage on the Compute device. Optimize connectivity.
+  * Total bytes sent/received / Elapsed time
 * **IOPS**
   * Input/Output operations/second. Assess data access performance. Optimize throughput.
-  * Total operations / Elapsed time 
+  * Total operations / Elapsed time
 * **Memory utilization**
   * RAM usage rate. Assess RAM usage for performance.
-  * Total RAM usage / Total RAM available 
+  * Total RAM usage / Total RAM available
 * **Caching**
-  * Data storage/retrieval. Improve data performance. 
-  * Hits / Misses 
+  * Data storage/retrieval. Improve data performance.
+  * Hits / Misses
 * **Cost**
-  * Expense management. Estimate resource expenses. 
-  * Actual cost/Estimated cost 
+  * Expense management. Estimate resource expenses.
+  * Actual cost/Estimated cost
 * **Container density**
-  * Resource utilization. Optimize resource use. 
-  * Used resources / Total resources 
+  * Resource utilization. Optimize resource use.
+  * Used resources / Total resources
 * **Function duration vs. limits**
-  * Execution time. Gauge execution time. 
+  * Execution time. Gauge execution time.
   * Analytics or Start time - End time vs. quota
 * **Function concurrency**
   * Simultaneous operations. Measure concurrency.
@@ -322,7 +331,7 @@ Many of the following metrics are available in analytics services of the cloud p
   * **Durability**: Once a transaction has been committed, it will remain so, even in the event of power loss or system crash.
 * **BASE**
   * Basically Available
-  * Soft state (may be inconsistent for brief periods) 
+  * Soft state (may be inconsistent for brief periods)
   * Eventually consistent
 
 
@@ -371,13 +380,13 @@ Applies to most storage mediums, including block, file, and object storage.
   * Total time for requests / Number of requests
 * **Data Transfer per time interval**
   * Total amount of data transferred
-  * Data Transferred (in bytes) / time interval 
+  * Data Transferred (in bytes) / time interval
 * **Object Storage Retention**
   * Length of time objects are stored before being deleted
   * Object transfer or deletion execution duration
 * **Geographic Put/Get requests**
   * Latency of Put/Get requests
-  * Latency (in milliseconds) / time interval 
+  * Latency (in milliseconds) / time interval
 * **Availability metrics**
   * Number of requests that fail
   * Requests that fail / total number of requests
@@ -486,8 +495,8 @@ RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multi
    * (risk rating x probability of risk) + (residual risk x probability of residual risk)
    * Number of Potential Risks / Number of Acceptable Risks
 * **Attack Surface**
-   * The total number of entry points or attack vectors available to attackers 
-   * Attack surface = sum of (threats x vulnerabilities) 
+   * The total number of entry points or attack vectors available to attackers
+   * Attack surface = sum of (threats x vulnerabilities)
 * **Vulnerability Assessment Score**
    * A numerical score based on a vulnerability assessment methodology such as CVSS
    * Common Vulnerability Scoring System [CVSS calculator(https://www.first.org/cvss/calculator/3.1)
@@ -509,7 +518,7 @@ RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multi
    * Number of Security Events Detected/Number of Security Events Recorded
 * **Security Incident Rate**
    * Rate of security incident per time interval
-   * Security incidents / time  
+   * Security incidents / time
 * **Security Compliance Score**
    * Score of how well the system complies with security policies and best practices
    * Compliance score = (number of compliant components / total number of components) x 100
@@ -543,18 +552,18 @@ RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multi
 * **User behavior analytics (UBA) and anomaly detection**
    * Measurement of the ability to detect anomalous user behavior
    * Number of anomalies detected / total user behavior events
-* **Data Loss Prevention (DLP)** 
-   * The practice of preventing sensitive data from leaving the organization 
-   * DLP = implementation of policies and technologies + monitoring of user activity 
-* **Data Encryption** 
-   * The practice of transforming sensitive data into an unreadable format 
-   * Data encryption = implementation of encryption algorithms + encryption of data 
+* **Data Loss Prevention (DLP)**
+   * The practice of preventing sensitive data from leaving the organization
+   * DLP = implementation of policies and technologies + monitoring of user activity
+* **Data Encryption**
+   * The practice of transforming sensitive data into an unreadable format
+   * Data encryption = implementation of encryption algorithms + encryption of data
 
-### ⭐️ Cost  
+### ⭐️ Cost
 
-I am only going to give some brief metrics on Cost, because almost everything above can affect cost and it will vary a lot between providers. 
+I am only going to give some brief metrics on Cost, because almost everything above can affect cost and it will vary a lot between providers.
 
-This is not to minimize cost, it's one of the most important factors!!! 
+This is not to minimize cost, it's one of the most important factors!!!
 
 Just that cost should be considered on ALL the metrics above.
 
@@ -598,6 +607,6 @@ There are a ton of cloud cost tools but these are some of the popular ones on th
 * [The Site Reliability Workbook](https://sre.google/books/)
 * [System Design Primer](https://github.com/donnemartin/system-design-primer)
 * [System Design Interview](https://github.com/checkcheckzz/system-design-interview)
-  
-  
+
+
 Thanks for checking it out... if you have ideas for improvements, feel free to comment or make a PR on my github repo: https://github.com/csjcode/solutions-architect-metrics-cheatsheet
