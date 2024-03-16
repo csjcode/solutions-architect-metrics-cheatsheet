@@ -478,33 +478,43 @@ RAID 60 | A combination of RAID 6 and RAID 0, where data is striped across multi
 * **Queue Depth**
   * Number of events in a queue waiting to be processed.
   * Total events - Processed events
+  * Measures the backlog of work and helps in understanding system load and the efficiency of processing mechanisms. For identifying potential bottlenecks and ensuring that the system is scaled properly to handle incoming volumes, maintaining system responsiveness.
 * **Queue Wait Time**
   * Amount of time an event spends waiting in a queue before being processed.
   * Total time events spend in queue / Number of events in queue
+  * Indicates the efficiency of the system in handling incoming requests, directly impacting user experience by determining the delay before a request is addressed. For optimizing processing priorities and capacities to minimize wait times, enhancing overall system performance.
 * **Event Arrival Rate**
   * Rate at which events are arriving at a queue.
   * Number of events arriving / Time interval
+  * For capacity planning and scalability assessments, this metric shows the demand placed on the system, guiding adjustments to processing capabilities or infrastructure to accommodate fluctuating event volumes without degradation in service quality.
 * **Event Processing Time**
   * Amount of time it takes to process an event.
   * Total time spent processing events / Number of events processed
+  * Reflects the efficiency of the system's processing capabilities, influencing both throughput and user satisfaction. Shortening event processing time is essential for improving system throughput and reducing the overall latency of operations.
 * **Event Processing Rate**
   * Rate at which events are being processed.
   * Number of events processed / Time interval
+  * For understanding the efficiency of the event handling system. It helps in assessing whether the processing capabilities are aligned with the incoming workload, ensuring timely handling of events without backlog accumulation.
 * **Queue Processing Rate**
   * Rate at which events are being processed from a queue.
   * Number of events processed from queue / Time interval
+  * For ensuring the system's responsiveness and efficiency in handling queued events. A higher queue processing rate indicates a more efficient system, reducing the risk of bottleneck formation and ensuring smooth flow of data through the system.
 * **Queue Time**
   * Total time that events spend in a queue, including both wait time and processing time.
   * Queue Wait Time + Event Processing Time
+  * A comprehensive view of the time an event spends in the system, from arrival to completion. For identifying inefficiencies in the queue management and processing stages, aiming to minimize the overall time spent in the queue to enhance throughput and user experience.
 * **Queue Throughput**
   * The rate at which events are moving through a queue, including both incoming and outgoing events.
   * Incoming Event Rate + Outgoing Event Rate
+  * For assessing the overall performance of the queuing system, indicating the volume of data that can be handled over a specific time period. High throughput is indicative of a well-optimized queue that efficiently manages both the intake and processing of events.
 * **Event Drop Rate**
   * the rate at which events are being dropped or lost, typically due to queue overflow.
   * Number of dropped events / Total number of events
+  * An indicator of system reliability and capacity. A high drop rate may signal that the system is overwhelmed or improperly configured, necessitating adjustments to either the system's capacity or the management strategy to reduce data loss and improve reliability.
 * **Queue Latency**
   * the time it takes for an event to travel through a queue, including both wait time and pr**ocessing time.
   * Queue Time / Number of events
+  * Essential for gauging the delay introduced by queuing mechanisms, impacting the overall speed at which the system can respond to and process events. Reducing queue latency is key to improving responsiveness and ensuring that time-sensitive data is handled promptly.
 
 
 ### ⭐️ Security
