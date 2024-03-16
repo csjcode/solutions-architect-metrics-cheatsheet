@@ -52,36 +52,43 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 ### ⭐️ Network
 
 
-
 * **CIDR/Subnet Calculation**
   * IP address and network mask calculation,
   * Number of IPs = 2<sup>32</sup>-2<sup>prefix</sup>
   * 10.0.0.0/24 = 2<sup>32</sup>-2<sup>24</sup> = 2<sup>8</sup> = 256
-  * For network sizing and planning
+  * For network sizing and planning, to determine the appropriate size of subnets to efficiently allocate IP addresses within networks, ensuring optimal use of IP space and network organization.
 * **Bandwidth Consumed/Utilization**
   * (Bandwidth used / Total available bandwidth) x 100%
   * Network resource usage, potential bottlenecks, cost, quotas, performance
+  * Enables monitoring of network load and identification of potential bottlenecks, guiding bandwidth management and optimization to ensure smooth data flow and prevent over-utilization.
 * **Available Bandwidth**
   * Total available bandwidth - bandwidth used.
   * Cost, performance, quotas, adequate resources for network traffic and avoiding slowdowns.
+  * Critical for ensuring that there are sufficient bandwidth resources to handle expected traffic volumes, allowing for proactive measures to avoid congestion and maintain high-quality network performance.
 * **Data Transmission Rate**
   * Amount of data transferred / time taken
   * Data transfer speed and network efficiency.
+  * Provides insights into the efficiency and speed of data movement across the network, helping in the optimization of network configurations and protocols to enhance data transmission rates.
 * **Link Capacity**
   * Maximum bandwidth capacity of a link.
   * Reliability - determines maximum bandwidth available for a link to ensure it can handle traffic.
+  * For network planning and resilience, ensuring each network link can support the required data volumes without compromising on performance or reliability.
 * **Network Throughput**
   * (Amount of data transferred / Total time) x 100%
   * Performance, operations, network efficiency and data transfer speed.
+  * For evaluating the overall capacity of the network to handle data transfers, ensuring the infrastructure is adequately provisioned to meet demand without causing slowdowns or impacting user experience.
 * **Network Latency**
   * Delay between sending and receiving data.  Round-trip time (RTT)
   * Performance, delay in data transfer and network responsiveness.
+  * For optimizing user experience and system performance, as lower latency translates to faster interactions for end-users. It's important in applications requiring real-time responses, helping to identify and mitigate network path issues.
 * **Network I/O**
   * Input/output rate of network data.
   * Warning of network bottlenecks, performance, cost.
+  * Provides insights into the balance between incoming and outgoing data, highlighting potential congestion points or inefficiencies in the network. This helps in ensuring that the network architecture supports the required data flow smoothly and cost-effectively.
 * **Request Error rate**
   * Percentage of failed requests,  (Number of failed requests / Total requests) x 100%
   * Identifies issues in the network or application that need to be addressed.
+  * For maintaining high-quality service, as a high error rate may indicate underlying problems with the network infrastructure or application code. Monitoring this metric helps in quickly identifying and rectifying issues to minimize user impact and maintain service reliability
 * **Packet Loss Rate**
   * Percentage of lost packets.
   * Identifies potential vulnerabilities or issues in the network or application.
