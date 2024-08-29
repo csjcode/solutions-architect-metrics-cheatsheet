@@ -1,5 +1,48 @@
+# Cloud Metrics Guide Update!!!
 
-#  ⚡️ 150+ Solutions Architect metrics/calculations cheatsheet
+Good news!!! I have created full 800+ page PDF of the info below!!! The "cheatsheet" is still available below too.
+
+SystemsArchitect.io Store: https://store.systemsarchitect.io/
+
+CloudMetricsGuide: https://www.cloudmetricsguide.com/
+
+
+
+![Cloud Metrics Guide](https://github.com/csjcode/solutions-architect-metrics-cheatsheet/blob/main/README.md/CMG-Cover-600.jpg "Cloud Metrics Guide")
+
+
+### Features
+
+Cloud Metrics Guide "Banyan Book" (full version, 800+pgs.)
+
+#### Cloud Metrics Guide ("Banyan Book")
+
+The Cloud Metrics Guide ("Banyan Book") is packed with over 190+ cloud metrics and 800+ pages, in detail, with scenarios, gotchas, diagrams and best practices, providing an important resource for those eager to apply learned insights for success.
+
+This Cloud Metrics reference guide is for the technical, project lead and business/marketing people motivated to improve their cloud software, unlock new hidden value and take the leadership initiative for strategy and KPIs.
+
+### For Technical, Devs, Manager, Business and Marketing roles!
+
+**Technical engineering roles:**
+
+Cloud Architects, DevOps, and Developers require careful consideration of metric calculations to ensure software success and make improvements.
+
+**Business, marketing and management roles:**
+
+Leadership, Managers, Product owners, Project managers, operations and IT managers can also gain special insights about key performance indicators in discussions with their tech team.
+
+**Cloud metrics covered:**
+
+190+ in the categories of User, Network, Reliability, Compute, Compute Scaling, API, Database, Storage, Events and Queues, Security and Cost metrics.
+
+* 190 + cloud metrics in detail!
+* 800+ pages of valuable content, the ULTIMATE reference guide!
+* PDF, Searchable, Linked Table of Contents (TOC) for fast navigation.
+* Scenario/s giving example calculations, formulas and realistic situations.
+* List of "Gotchas" for each metric usage, for better understanding.
+* 5+ Best Practices and implementation suggestions for each metric!!!
+
+#### ⚡️ 150+ Solutions Architect metrics/calculations cheatsheet
 
 150+ Solutions Architect metrics and calculations for systems design, technology comparisons, planning and projects. btw, If there is interest, I'll make this into tables, I made a few but haven't had time to do it all yet.
 
@@ -10,10 +53,11 @@ Thanks for checking it out... if you have ideas for improvements, feel free to c
 
 ### ⭐️ User
 
-* **Daily Active Users (DAU)**
-  * Unique active users / day
-  * Performance and capacity needs, daily, projections.
-  * Gauge the day-to-day engagement and optimize infrastructure for daily load variations. This helps in scaling resources efficiently to manage daily user activity without over-provisioning.
+### Daily Active Users (DAU)
+* Unique active users / day
+* Performance and capacity needs, daily, projections.
+* Gauge the day-to-day engagement and optimize infrastructure for daily load variations. This helps in scaling resources efficiently to manage daily user activity without over-provisioning.
+
 * **Monthly Active Users (MAU)**
   * Unique active users / month
   * Performance and capacity over longer time periods, projections.
