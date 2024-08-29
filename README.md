@@ -8,7 +8,7 @@ CloudMetricsGuide: https://www.cloudmetricsguide.com/
 
 
 
-![Cloud Metrics Guide](https://github.com/csjcode/solutions-architect-metrics-cheatsheet/blob/main/README.md/CMG-Cover-600.jpg "Cloud Metrics Guide")
+![Cloud Metrics Guide](https://github.com/csjcode/solutions-architect-metrics-cheatsheet/blob/main/CMG-Cover-600.jpg "Cloud Metrics Guide")
 
 
 ### Features
