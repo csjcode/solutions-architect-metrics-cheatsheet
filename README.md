@@ -1,6 +1,6 @@
 # Cloud Metrics Guide Update!!!
 
-Good news!!! I have created full 800+ page PDF of the info below!!! The "cheatsheet" is still available below too.
+Good news!!! I have created a full 800+ page PDF of the info below!!! The "cheatsheet" is still available below too. But this PDF goes into extensive detail with charts, formulas, explanations, best practices and more!
 
 SystemsArchitect.io Store: https://store.systemsarchitect.io/
 
