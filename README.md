@@ -4,8 +4,7 @@ Good news!!! I have created full 800+ page PDF of the info below!!! The "cheatsh
 
 SystemsArchitect.io Store: https://store.systemsarchitect.io/
 
-CloudMetricsGuide: https://www.cloudmetricsguide.com/
-
+Cloud Metrics Guide (800+ pages, 190+ metrics!): https://www.cloudmetricsguide.com/
 
 
 ![Cloud Metrics Guide](https://github.com/csjcode/solutions-architect-metrics-cheatsheet/blob/main/CMG-Cover-600.jpg "Cloud Metrics Guide")
@@ -41,6 +40,8 @@ Leadership, Managers, Product owners, Project managers, operations and IT manage
 * Scenario/s giving example calculations, formulas and realistic situations.
 * List of "Gotchas" for each metric usage, for better understanding.
 * 5+ Best Practices and implementation suggestions for each metric!!!
+
+Cloud Metrics Guide (800+ pages, 190+ metrics!): https://www.cloudmetricsguide.com/
 
 #### ⚡️ 150+ Solutions Architect metrics/calculations cheatsheet
 
